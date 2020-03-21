@@ -1,0 +1,19 @@
+{% include 'header.twig' %}
+{% block content %}
+    <h4>Все заказы</h4>
+    <table border="1" cellspacing="0" cellpadding="3" style="width: 95%;">
+        <tr style="background-color: #efefef;"><th>Id</th><th>Дата и время заказа</th><th>Клиент</th><th>Содержимое</th><th>Примечание</th><th>Детали</th><th>Адрес доставки</th></tr>
+        {% for order in orders %}
+            <tr>
+                <td style="text-align: center;">{{ order.id }}</td>
+                <td style="text-align: center;">{{ order.dt }}</td>
+                <td>{{ order.username }}</td>
+                <td>{{ order.items }}</td>
+                <td>{{ order.notes }}</td>
+                <td>{{ order.options }}</td>
+                <td>{{ order.address}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+{% include 'footer.twig' %}

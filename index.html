@@ -448,15 +448,14 @@
 
           $("#reg_order_btn").click(function() {
             $.ajax({
-              url: 'ajax.register.php',
+              url: 'ajax/ajax.register.php',
               type: 'post',
               data: $('#order-form').serialize(),
               dataType: 'json',
               success: function(response) {
                 console.log(response.res);
                 alert(response.msg);
-                $('#order-form').trigger("reset");;
-
+                $('#order-form').trigger("reset");
               }
             });
 

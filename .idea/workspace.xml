@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09fead9a-6376-488d-bda2-0f5310464464" name="Default Changelist" comment="" />
+    <list default="true" id="09fead9a-6376-488d-bda2-0f5310464464" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/burgers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/burgers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b0894d3b-255d-42f1-ba4b-51d21c285336.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b0894d3b-255d-42f1-ba4b-51d21c285336/storage_v2/_src_/schema/edu.tocBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b0894d3b-255d-42f1-ba4b-51d21c285336/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax.register.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/ajax.register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/burger.sql" beforeDir="false" afterPath="$PROJECT_DIR$/burger.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/class.db.php" beforeDir="false" afterPath="$PROJECT_DIR$/base/Db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/base/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/order_10_03.03.2020_12.07.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/order_12_03.03.2020_12.11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/order_13_03.03.2020_12.19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/order_1_03.03.2020_11.23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/order_2_03.03.2020_11.24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/order_3_03.03.2020_11.36.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orders/order_4_03.03.2020_11.50.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>D:\www\OSPanel\domains\burgers\composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="db70b649-9c97-4452-a6bc-c743b2c59a75" />
     </execution>
   </component>
   <component name="DatabaseView">
@@ -42,7 +63,25 @@
     </expand>
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1YUtN7h8fCzlmyT7e0JSd13CzhX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -51,7 +90,15 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb&#10;mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\www\OSPanel\domains\burgers\ajax" />
+      <recent name="D:\www\OSPanel\domains\burgers\base" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -87,7 +134,9 @@
       <option name="presentableId" value="Default" />
       <updated>1583008957509</updated>
       <workItem from="1583008960187" duration="1478000" />
-      <workItem from="1583080721853" duration="40996000" />
+      <workItem from="1583080721853" duration="44515000" />
+      <workItem from="1584485118157" duration="8458000" />
+      <workItem from="1584638356383" duration="15170000" />
     </task>
     <servers />
   </component>
@@ -99,6 +148,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="24" width="821" height="679" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583097333860" />
+    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1584488214428">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584488214428" />
     <state width="989" height="174" key="GridCell.Tab.0.bottom" timestamp="1583099238936">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -119,10 +172,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="508" y="197" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1583094214195" />
-    <state x="518" y="294" key="NewPhpFileDialog" timestamp="1583180797622">
+    <state x="518" y="294" key="NewPhpFileDialog" timestamp="1584574629708">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="294" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1583180797622" />
+    <state x="518" y="294" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1584574629708" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1584488222478">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1584488222478" />
     <state x="586" y="256" width="319" height="226" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1583096489315">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -143,10 +200,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="557" y="115" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1366.728@0.0.1366.728" timestamp="1583097376034" />
-    <state x="390" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1583080727931">
+    <state x="390" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1584638363494">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583080727931" />
+    <state x="390" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584638363494" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583176091444">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

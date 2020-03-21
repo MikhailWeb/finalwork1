@@ -1,0 +1,16 @@
+{% include 'header.twig' %}
+{% block content %}
+    <h4>Клиенты</h4>
+    <table border="1" cellspacing="0" cellpadding="3" style="width: 700px; margin-bottom: 50px;">
+        <tr style="background-color: #efefef;"><th>Id</th><th>Клиент</th><th>Телефон</th><th>Емэйл</th></tr>
+        {% for client in clients %}
+        <tr>
+            <td style="text-align: center;">{{ client.id }}</td>
+            <td>{{ client.username }}</td>
+            <td style="text-align: center;">{{ client.phone }}</td>
+            <td style="text-align: center;">{{ client.email }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
+{% include 'footer.twig' %}

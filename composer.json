@@ -1,0 +1,6 @@
+{
+  "require": {
+    "swiftmailer/swiftmailer": "dev-master",
+    "twig/twig":"^2.9.0"
+  }
+}

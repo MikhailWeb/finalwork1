@@ -1,11 +1,19 @@
 ﻿--
 -- Скрипт сгенерирован Devart dbForge Studio for MySQL, Версия 6.2.280.0
 -- Домашняя страница продукта: http://www.devart.com/ru/dbforge/mysql/studio
--- Дата скрипта: 03.03.2020 15:28:29
+-- Дата скрипта: 22.03.2020 4:00:06
 -- Версия сервера: 5.5.5-10.3.13-MariaDB-log
 -- Версия клиента: 4.1
 --
 
+
+--
+-- Описание для базы данных burger
+--
+DROP DATABASE IF EXISTS burger;
+CREATE DATABASE IF NOT EXISTS burger
+	CHARACTER SET utf8mb4
+	COLLATE utf8mb4_unicode_ci;
 
 -- 
 -- Отключение внешних ключей
@@ -30,8 +38,7 @@ USE burger;
 --
 -- Описание для таблицы tbl_orders
 --
-DROP TABLE IF EXISTS tbl_orders;
-CREATE TABLE tbl_orders (
+CREATE TABLE IF NOT EXISTS tbl_orders (
   id INT(11) NOT NULL AUTO_INCREMENT,
   user_id INT(11) NOT NULL,
   address VARCHAR(255) DEFAULT 'NULL',
@@ -42,8 +49,8 @@ CREATE TABLE tbl_orders (
   PRIMARY KEY (id)
 )
 ENGINE = INNODB
-AUTO_INCREMENT = 14
-AVG_ROW_LENGTH = 2340
+AUTO_INCREMENT = 27
+AVG_ROW_LENGTH = 1489
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci
 ROW_FORMAT = DYNAMIC;
@@ -51,8 +58,7 @@ ROW_FORMAT = DYNAMIC;
 --
 -- Описание для таблицы tbl_users
 --
-DROP TABLE IF EXISTS tbl_users;
-CREATE TABLE tbl_users (
+CREATE TABLE IF NOT EXISTS tbl_users (
   id INT(11) NOT NULL AUTO_INCREMENT,
   username VARCHAR(100) NOT NULL,
   email VARCHAR(50) NOT NULL,
@@ -61,8 +67,8 @@ CREATE TABLE tbl_users (
   UNIQUE INDEX tbl_User_email_uindex (email)
 )
 ENGINE = INNODB
-AUTO_INCREMENT = 22
-AVG_ROW_LENGTH = 2730
+AUTO_INCREMENT = 25
+AVG_ROW_LENGTH = 2048
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci
 ROW_FORMAT = DYNAMIC;
@@ -77,7 +83,11 @@ INSERT INTO tbl_orders VALUES
 (4, 17, 'ул. 3-я ул. Строителей, д. 5, кв. 25, этаж 5', 'DarkBeefBurger - 1 шт.; Сумма = 500 * 1 = 500 руб.\r\n\r\nИтог: 500 руб.', 'г. Ленинград', 'Оплата: оплата картой\r\nОбратная связь: не перезванивать', '2020-03-03 14:50:29'),
 (10, 20, 'ул. Бастионная, д. 1', 'DarkBeefBurger - 1 шт.; Сумма = 500 * 1 = 500 руб.\r\n\r\nИтог: 500 руб.', 'йцукен', 'Оплата: требуется сдача\r\nОбратная связь: не перезванивать', '2020-03-03 15:07:07'),
 (12, 21, 'ул. Железная, д. 17, кв. 10, этаж 3', 'DarkBeefBurger - 1 шт.; Сумма = 500 * 1 = 500 руб.\r\n\r\nИтог: 500 руб.', 'два комплекта приборов', 'Оплата: оплата картой\r\nОбратная связь: не перезванивать', '2020-03-03 15:11:06'),
-(13, 15, 'ул. Рабочая, д. 3', 'DarkBeefBurger - 1 шт.; Сумма = 500 * 1 = 500 руб.\r\n\r\nИтог: 500 руб.', 'побыстрее', 'Оплата: оплата картой\r\n\r\nОбратная связь: не перезванивать', '2020-03-03 15:19:26');
+(13, 15, 'ул. Рабочая, д. 3', 'DarkBeefBurger - 1 шт.; Сумма = 500 * 1 = 500 руб.\r\n\r\nИтог: 500 руб.', 'побыстрее', 'Оплата: оплата картой\r\n\r\nОбратная связь: не перезванивать', '2020-03-03 15:19:26'),
+(14, 22, 'ул. Крылова, д. 10, к. 2, кв. 12, этаж 2', 'DarkBeefBurger - 1 шт.; Сумма = 500 * 1 = 500 руб.\r\n\r\nИтог: 500 руб.', 'поскорее', 'Оплата: оплата картой\r\n\r\nОбратная связь: не перезванивать', '2020-03-19 23:25:02'),
+(21, 24, 'ул. Набережная, д. 11, к. 2, кв. 4, этаж 2', 'DarkBeefBurger - 1 шт.; Сумма = 500 * 1 = 500 руб.\r\n\r\nИтог: 500 руб.', 'Побыстрее', 'Оплата: оплата картой\r\n\r\nОбратная связь: не перезванивать', '2020-03-20 00:07:57'),
+(24, 24, 'ул. Шоссейная, д. 1, к. 2, кв. 3', 'DarkBeefBurger - 1 шт.; Сумма = 500 * 1 = 500 руб.\r\n\r\nИтог: 500 руб.', '', 'Оплата: оплата картой', '2020-03-20 00:54:23'),
+(26, 24, 'ул. Шоссейная, д. 1, к. 2, кв. 3', 'DarkBeefBurger - 1 шт.; Сумма = 500 * 1 = 500 руб.\r\n\r\nИтог: 500 руб.', '', 'Оплата: требуется сдача', '2020-03-20 01:15:02');
 
 -- 
 -- Вывод данных для таблицы tbl_users
@@ -88,7 +98,9 @@ INSERT INTO tbl_users VALUES
 (15, 'Снежанна', 'snezha@mail.ru', '+7 (777) 777 77 77'),
 (17, 'Василий Иванович', 'chapayev@mail.ru', '+7 (888) 888 88 88'),
 (20, 'БАСТА', 'баста@mail.ru', '+7 (123) 456 78 91'),
-(21, 'Элеонора', 'alya@mail.ru', '+7 (353) 535 35 35');
+(21, 'Элеонора', 'alya@mail.ru', '+7 (353) 535 35 35'),
+(22, 'Ivanov Ivan', 'qwerty@mail.ru', '+7 (777) 321 32 32'),
+(24, 'Sidorov Sergey', 'mix_g@mail.ru', '+7 (123) 456 72 22');
 
 -- 
 -- Восстановить предыдущий режим SQL (SQL mode)
